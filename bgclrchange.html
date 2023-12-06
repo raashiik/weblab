@@ -1,0 +1,34 @@
+<html>
+<head>
+   <style>
+      #clr {
+         width: 650px;
+         background-color: #ff99ff;
+         height: 500px;
+         text-align:center;
+         content:center;
+      }
+      h2{
+     color:#990099 ;}
+     button{
+     color:#660033}
+   </style>
+</head>
+<body>
+   <h2> Bg Colorchange when we click on button</h2>
+   <div id="clr">
+      <p style="padding:15px; color:#990033 " > Click button to change the bg color....... </p>
+      <button  onclick="changeBackgroundColor()">
+         Click me
+      </button>
+      <br><br>
+     
+      
+      <script>
+      function changeBackgroundColor() {
+         document.getElementById("clr").style.backgroundColor = "lightblue";
+      }
+      </script>
+   </div>
+</body>
+</html>
