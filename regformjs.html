@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>registration form
+</title>
+
+<style>
+h1{ 
+	color:gray;
+	text-shadow: 2px 2px 1px  white ;
+	
+	
+	}
+	form{
+ background: linear-gradient(to bottom, #ffccff 0%, #ccccff 100%);;
+   width: 500px;
+  text-align: center;
+  padding:5px;
+  border: 5px solid gray;
+  justify-content:center;
+
+	}
+
+</style>
+
+
+<script type="text/javascript">
+function checkMyMailAddress(HTMLText) {
+var validate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (HTMLText.value.match(validate)) {
+alert("Mail ID format is approved!");
+document.mailForm.mailText.focus();
+return true;
+} else {
+alert("Mail ID format is not approved!");
+document.mailForm.mailText.focus();
+return false;
+}
+}
+
+function validatePhoneNumber(input_str) {
+  var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+
+  return re.test(input_str);
+}
+
+</script>
+
+</head>
+<body onload='document.mailForm.mailText.focus()'   >
+
+
+<center>
+<h1> REGISTRATION FORM </h1>
+
+<form>
+<img src="/home/mca/Pictures/user.jpeg" width="150px" height="150px">
+
+<br><br>
+
+<label>First name:</label>
+<input type="text" placeholder="Enter your name">
+
+<br><br>
+
+
+<label>Last name:</label>
+<input type="text" placeholder="Enter your last name">
+
+<br><br>
+
+<label>Address:</label>
+<textarea rows="5" cols="10" placeholder="Enter your address here:" >  </textarea>
+
+<br><br>
+
+
+<label>Gender:</label>
+<br>
+ <input type="radio" id="H1" name="gender" value="male">Male <br>
+ <input type="radio" id="H2" name="gender" value="female">Female <br>
+ <input type="radio" id="H3" name="gender" value="others">Others <br>
+ 
+ <br><br>
+ DOB :
+<input type="date" id="birthday" name="birthday">
+ 
+ 
+  <br><br>
+ 
+Compimentary:
+<input type="checkbox" id="sub1" name="sub1" value="Maths">Maths
+<input type="checkbox" id="sub2" name="sub2" value="Electronics">Electronics
+<input type="checkbox" id="sub3" name="sub3" value="Physics">Physics
+
+
+ <br><br>
+ 
+<label>phone no:</label>
+<input type="text" placeholder="Enter your number">
+
+<br><br>
+
+<label>mail id:</label>
+<input type="email" placeholder="Enter your mail" 
+
+ name='mailText' /> <input type="submit"
+name="submit" value="Validate"
+          onclick="checkMyMailAddress(document.mailForm.mailText)">
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+courses: <br>
+ 
+ 
+<select name="Course" value="choose" id="Course">
+  <option value="MCA">MCA</option>
+  <option value="MBA">MBA</option>
+  <option value="B.TECH">B.TECH</option>
+  <option value="M.TECH"></option>
+</select>
+ 
+<br><br>
+ <input type="submit" onClick="suBmit()" value="Submit">
+ 
+
+ <script  type="text/javascript" src="script.js"></script> 
+
+
+
+
+
+
+</form>
+</center>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
